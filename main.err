@@ -1,0 +1,6 @@
+Compiling E:\Study\College\Cong thuc\Ky 5\Thiet ke he thong nhung\Pic\Dieu khien dong co PWM\main on 21-Nov-22 at 00:26
+>>> Warning 244 "E:\Study\College\Cong thuc\Ky 5\Thiet ke he thong nhung\Pic\Dieu khien dong co PWM\main.c" Line 8(1,1): Function Param:   8-bit value passed to function, only 8 MSB of duty will be set
+>>> Warning 244 "E:\Study\College\Cong thuc\Ky 5\Thiet ke he thong nhung\Pic\Dieu khien dong co PWM\main.c" Line 9(1,1): Function Param:   8-bit value passed to function, only 8 MSB of duty will be set
+      Memory usage:   ROM=1%      RAM=2% - 2%
+      0 Errors,  2 Warnings.
+Build Successful.

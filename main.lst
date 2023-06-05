@@ -1,0 +1,101 @@
+CCS PCM C Compiler, Version 5.101, 43599               21-Nov-22 00:26
+
+               Filename:   E:\Study\College\Cong thuc\Ky 5\Thiet ke he thong nhung\Pic\Dieu khien dong co PWM\main.lst
+
+               ROM used:   47 words (1%)
+                           Largest free fragment is 2048
+               RAM used:   6 (2%) at main() level
+                           6 (2%) worst case
+               Stack used: 0 locations
+               Stack size: 8
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   004
+0003:  NOP
+.................... #include <main.h>
+.................... #include <16F877A.h>
+.................... //////////// Standard Header file for the PIC16F877A device ////////////////
+.................... ///////////////////////////////////////////////////////////////////////////
+.................... ////        (C) Copyright 1996, 2020 Custom Computer Services          ////
+.................... //// This source code may only be used by licensed users of the CCS C  ////
+.................... //// compiler.  This source code may only be distributed to other      ////
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction ////
+.................... //// or distribution is permitted without written permission.          ////
+.................... //// Derivative programs created using this software in object code    ////
+.................... //// form are not restricted in any way.                               ////
+.................... ///////////////////////////////////////////////////////////////////////////
+.................... #device PIC16F877A
+.................... 
+.................... #list
+.................... 
+.................... #device ADC=10
+.................... #fuses HS
+.................... #use delay(crystal=20000000)
+.................... 
+.................... 
+.................... 
+.................... void main()
+0004:  MOVF   03,W
+0005:  ANDLW  1F
+0006:  MOVWF  03
+0007:  MOVLW  FF
+0008:  MOVWF  20
+0009:  BSF    03.5
+000A:  BSF    1F.0
+000B:  BSF    1F.1
+000C:  BSF    1F.2
+000D:  BCF    1F.3
+000E:  MOVLW  07
+000F:  MOVWF  1C
+0010:  BCF    03.7
+.................... {
+....................    setup_timer_2(T2_DIV_BY_16,100,1);
+0011:  MOVLW  00
+0012:  MOVWF  78
+0013:  IORLW  06
+0014:  BCF    03.5
+0015:  MOVWF  12
+0016:  MOVLW  64
+0017:  BSF    03.5
+0018:  MOVWF  12
+....................    setup_ccp1(CCP_PWM);
+0019:  BCF    03.5
+001A:  BCF    20.2
+001B:  MOVF   20,W
+001C:  BSF    03.5
+001D:  MOVWF  07
+001E:  BCF    03.5
+001F:  BCF    07.2
+0020:  MOVLW  0C
+0021:  MOVWF  17
+....................    setup_ccp2(CCP_PWM);
+0022:  BCF    20.1
+0023:  MOVF   20,W
+0024:  BSF    03.5
+0025:  MOVWF  07
+0026:  BCF    03.5
+0027:  BCF    07.1
+0028:  MOVLW  0C
+0029:  MOVWF  1D
+....................    set_pwm1_duty(50);
+002A:  MOVLW  32
+002B:  MOVWF  15
+....................    set_pwm2_duty(0);//Tat xung 2 se quay cung chieu kdh va xung 1 se ngc lai
+002C:  CLRF   1B
+....................    //ca 2 cung bat voi chu ky may bang nhau thi se k quay
+....................    
+....................    while(TRUE)
+....................    {
+002D:  GOTO   02D
+.................... 
+.................... 
+....................       //TODO: User Code
+....................    }
+.................... 
+.................... }
+002E:  SLEEP
+
+Configuration Fuses:
+   Word  1: 3F72   HS NOWDT PUT BROWNOUT NOLVP NOCPD NOWRT NODEBUG NOPROTECT

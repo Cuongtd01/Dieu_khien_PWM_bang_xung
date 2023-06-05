@@ -1,0 +1,84 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.101
+Compiler=PCM
+CCSVersion=5.101
+[Target Data]
+FileList=main.c
+[Directories]
+Include=
+[E:\Study\College\Cong thuc\Ky 5\Thiet ke he thong nhung\Pic\Dieu khien dong co servo\main]
+Type=4
+[mru-list]
+1=main.c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=4
+D1=20-11-2022
+D1_L=6
+D1_L1=[77571]Project Opened.
+D1_L2=[78344]Started Editing.
+D1_L3=[78649]Stopped Editing.
+TotalEdit=7
+TotalDebug=0
+D1_E=1
+D1_D=0
+D1_L4=[79620]Project Closed.
+D1_L5=[85654]Project Opened.
+D1_L6=[86240]Started Editing.
+D2=21-11-2022
+D2_L=11
+D2_L1=[147]Stopped Editing.
+D2_L2=[873]Started Editing.
+D2_L3=[1280]Stopped Editing.
+D2_L4=[1479]Started Editing.
+D2_L5=[1611]Stopped Editing.
+D2_E=5
+D2_D=0
+D2_L6=[1611]Project Closed.
+D2_L7=[1612]Project Opened.
+D2_L8=[35134]Project Opened.
+D2_L9=[35135]Project Closed.
+D2_L10=[35137]Project Opened.
+D2_L11=[35264]Project Closed.
+D3=20-12-2022
+D3_L=2
+D3_L1=[61796]Project Opened.
+D3_L2=[62092]Project Closed.
+D4=05-06-2023
+D4_L=10
+D4_L1=[79444]Project Opened.
+D4_L2=[79523]Project Closed.
+D4_L3=[80230]Project Opened.
+D4_L4=[80238]Project Closed.
+D4_L5=[80846]Project Opened.
+D4_L6=[80890]Project Closed.
+D4_L7=[80928]Project Opened.
+D4_L8=[80934]Started Editing.
+D4_L9=[80951]Stopped Editing.
+D4_E=1
+D4_D=0
+D4_L10=[80951]Project Closed.
+
+[Opened Files]
+1=main.c
+t1=1
+Count=3
+2=main.h
+t2=1
+3=D:\Program Files (x86)\PICC\Devices\16F877A.h
+t3=1
+[main.c]
+Type=4
+
+[defines]
+buildcount=9
+[E:\Study\College\Cong thuc\Ky 5\Thiet ke he thong nhung\Pic\Dieu khien dong co PWM\main]
+Type=4
+[Units]
+Count=1
+1=main (main)
